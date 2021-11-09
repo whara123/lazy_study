@@ -24,7 +24,7 @@ header{
     align-items: center;
     justify-content: space-between;
     height: 72px;
-    margin: 0 250px;
+    margin: 0 150px;
 }
 
 .menuWrap{
@@ -74,7 +74,7 @@ i{
 }
 
 main{
-    margin: 78px 250px 0 250px;
+    margin: 78px 150px 0 150px;
     
 }
 
