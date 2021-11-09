@@ -24,7 +24,7 @@ header{
     align-items: center;
     justify-content: space-between;
     height: 72px;
-    margin: 0 150px;
+    margin: 0 250px;
 }
 
 .menuWrap{
@@ -74,7 +74,7 @@ i{
 }
 
 main{
-    margin: 78px 150px 0 150px;
+    margin: 78px 250px 0 250px;
     
 }
 
@@ -157,7 +157,7 @@ h4 button:hover{
 
 .newsRelease{
     position:relative;
-    padding: 10px 8px;
+    padding: 10px 7px;
     font-size: 13px;
     margin-right: 430px;
     border-radius: 13px;
@@ -193,6 +193,21 @@ h4 button:hover{
     transition: 0.2s;
 }
 
+.sales{
+    position: absolute;
+    bottom: -40px;
+    right: 325px;
+    margin-top: 80px;
+    box-sizing: border-box;
+    width: 297px;
+    height: 420px;
+    
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px #eee;
+    overflow: hidden;
+    transition: 0.2s;
+}
+
 .rightSide ul li header{
     padding: 25px 24px 0;
     width: 249px;
@@ -211,7 +226,34 @@ h4 button:hover{
 .rightSide ul li header .entertainTitle{
     width: 245px;
     font-size: 18px;
+    margin-bottom: 40px;
 }
+
+.rightSide ul .stock header .stockPrice{
+    font-size: 36px;
+    margin-top: 24px;
+    margin-bottom: 40px;
+    width: 90%;
+    font-weight: bold;
+    
+
+}
+
+.rightSide ul .stock header .stockPrice small{
+    position:absolute;
+    font-size: 14px;
+    line-height: 16px;
+    color:blue;
+    margin-left: 10px;
+    margin-top: 13px;
+}
+
+.rightSide ul .stock header .stockPrice small::before{
+    content: "▼ ";
+    font-size: 14px;
+}
+
+
 
 .picomaImage{
     margin-top: 2px;
@@ -252,6 +294,24 @@ ul{
     box-shadow: 1px 1px 10px #eee;
     overflow: hidden;
     transition: 0.2s;
+
+    
+}
+
+.rightSide .promise{
+    margin-top: 18px;
+    box-sizing: border-box;
+    width: 297px;
+    height: 192px;
+    
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px #eee;
+    overflow: hidden;
+    transition: 0.2s;
+
+    position: absolute;
+    bottom: -265px;
+    right: 325px;
 }
 
 .invertText{
