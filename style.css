@@ -194,9 +194,6 @@ h4 button:hover{
 }
 
 .sales{
-    position: absolute;
-    bottom: -40px;
-    right: 325px;
     margin-top: 80px;
     box-sizing: border-box;
     width: 297px;
@@ -250,7 +247,7 @@ h4 button:hover{
 
 .rightSide ul .stock header .stockPrice small::before{
     content: "▼ ";
-    font-size: 14px;
+    
 }
 
 
@@ -309,9 +306,6 @@ ul{
     overflow: hidden;
     transition: 0.2s;
 
-    position: absolute;
-    bottom: -265px;
-    right: 325px;
 }
 
 .invertText{
