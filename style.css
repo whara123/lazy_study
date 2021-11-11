@@ -24,7 +24,7 @@ header{
     align-items: center;
     justify-content: space-between;
     height: 72px;
-    margin: 0 100px;
+    margin: 0 304px;
 }
 
 .menuWrap{
@@ -74,7 +74,8 @@ i{
 }
 
 main{
-    margin: 78px 0 0 100px;
+    margin: 78px 0 0 304px;
+    height: 300vh;
     
 }
 
@@ -93,9 +94,14 @@ main{
     font-size: 36px;
     font-weight: bold;
 }
+.day-desc{
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 80px;
+}
 
 .newsEntertain{
-    margin-top: 80px;
+    
     box-sizing: border-box;
     width: 625px;
     height: 662px;
@@ -176,13 +182,16 @@ h4 button:hover{
 
 .rightSide{
     display: flex;
+    margin-left: 18px;
     width: 666px;
-    margin: 0;
-    margin-top: 62px;
+}
+
+.leftSide{
+    margin-right: 18px;
 }
 
 .global{
-    margin-top: 80px;
+    
     box-sizing: border-box;
     width: 297px;
     height: 420px;
@@ -194,7 +203,7 @@ h4 button:hover{
 }
 
 .sales{
-    margin-top: 80px;
+    
     box-sizing: border-box;
     width: 297px;
     height: 420px;
@@ -205,28 +214,28 @@ h4 button:hover{
     transition: 0.2s;
 }
 
-.rightSide ul li header{
+.rightSide  header{
     padding: 25px 24px 0;
     width: 249px;
     height: 170px;
 }
 
-.rightSide ul li header h4 .newsRelease{
+.rightSide  header h4 .newsRelease{
     margin-right: 100px;
 }
 
-.rightSide ul li header h4{
+.rightSide header h4{
     display: flex;
     justify-content: space-between;
 }
 
-.rightSide ul li header .entertainTitle{
+.rightSide header .entertainTitle{
     width: 245px;
     font-size: 18px;
     margin-bottom: 40px;
 }
 
-.rightSide ul .stock header .stockPrice{
+.rightSide .stock header .stockPrice{
     font-size: 36px;
     margin-top: 24px;
     margin-bottom: 40px;
@@ -236,7 +245,7 @@ h4 button:hover{
 
 }
 
-.rightSide ul .stock header .stockPrice small{
+.rightSide .stock header .stockPrice small{
     position:absolute;
     font-size: 14px;
     line-height: 16px;
@@ -245,7 +254,7 @@ h4 button:hover{
     margin-top: 13px;
 }
 
-.rightSide ul .stock header .stockPrice small::before{
+.rightSide .stock header .stockPrice small::before{
     content: "▼ ";
     
 }
@@ -258,31 +267,28 @@ h4 button:hover{
     height: 223px;
 }
 
-
-article{
-    margin: 0 18px 0;
-}
-
 .kakaoInfo{
     display: flex;
 }
 
-ul{
+.rightSide{
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
+    height: 920px;
 }
 
-.rightSide ul li{
-    margin: 18px 18px;
+.rightSide article{
+    margin-bottom: 36px;
 }
 
-.rightSide ul li:hover{
+.rightSide article:hover{
     transform: translateY(-2px);
     box-shadow: 1px 1px 10px gray;
 }
 
 .rightSide .stock{
-    margin-top: 18px;
+    
     box-sizing: border-box;
     width: 297px;
     height: 192px;
@@ -292,11 +298,10 @@ ul{
     overflow: hidden;
     transition: 0.2s;
 
-    
 }
 
 .rightSide .promise{
-    margin-top: 18px;
+    
     box-sizing: border-box;
     width: 297px;
     height: 192px;
@@ -310,4 +315,58 @@ ul{
 
 .invertText{
     margin-bottom: 60px;
+}
+
+.culture{
+    width: 1300px;
+    
+}
+
+.cultureBox{
+    
+    text-align: center;
+    border-radius: 14px;
+    box-shadow: 1px 1px 10px #eee;
+    padding:54px 66px 0;
+    margin:0 18px 36px 18px;
+    height: 540px;
+    
+}
+
+.cultureImg{
+    width: 900px;
+    height: 240px;
+   margin:50px 132px 0;
+}
+
+.cultureLink{
+    display: block;
+    font-size: 14px;
+    width: 136px;
+    height: 33px;
+    margin: 36px auto;
+    
+    padding: 15px 40px 0 25px;
+    background-color: black;
+    color: white;
+
+    border-radius: 42px;
+    position: relative;
+    
+    
+}
+
+.cultureLink::after{
+    display: block;
+    content: '→';
+    position: absolute;
+    right: 18px;
+    margin-top: -18px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+.cultureText{
+    font-size: 42px;
 }
