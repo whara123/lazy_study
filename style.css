@@ -7,6 +7,11 @@
     overflow: hidden;
 }
 
+body{
+    word-break: keep-all;
+    word-wrap: break-word;
+}
+
 .logo{
     width: 74px;
     height: 24.66px;
@@ -110,6 +115,7 @@ main{
     box-shadow: 1px 1px 10px #eee;
     overflow: hidden;
     transition: 0.2s;
+    
 }
 
 .newsEntertain:hover{
@@ -130,7 +136,7 @@ main{
 
 .entertainTitle{
     font-size: 30px;
-    margin-top: 24px;
+    margin-top: 11px;
     margin-bottom: 20px;
     width: 90%;
 }
@@ -188,6 +194,7 @@ h4 button:hover{
 
 .leftSide{
     margin-right: 18px;
+    height: 877px;
 }
 
 .global{
@@ -267,6 +274,8 @@ h4 button:hover{
     height: 223px;
 }
 
+
+
 .kakaoInfo{
     display: flex;
 }
@@ -312,6 +321,7 @@ h4 button:hover{
     transition: 0.2s;
 
 }
+
 
 .invertText{
     margin-bottom: 60px;
@@ -370,3 +380,154 @@ h4 button:hover{
 .cultureText{
     font-size: 42px;
 }
+
+.stiky{
+    position: sticky;
+    top: 0;
+}
+
+
+
+
+
+.article-small{
+    box-sizing: border-box;
+    width: 297px;
+    height: 192px;
+    
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px #eee;
+    overflow: hidden;
+    transition: 0.2s;
+}
+
+.txt-head{
+    padding: 10px 7px;
+    font-size: 13px;
+
+    margin: 0 140px 20px 40px;
+    position: relative;
+    border-radius: 13px;
+    background-color: #eeeeee;
+}
+
+.txt-head::before{
+    position: absolute;
+    display: block;
+    margin:-9px 0 0 -11px;
+    width: 16px;
+    height: 13px;
+    background: url("./img/talk.svg");
+    content: "";
+}
+
+.txt-head::after{
+    position: absolute;
+    display: block;
+    content: '';
+    background-image: url("./img/ico_customer.png");
+    background-size: cover;
+    margin: -25px 0 0 -49px;
+    width: 36px;
+    height: 36px;
+}
+
+.news-release::after{
+    background-image: url("./img/news_release.png");
+}
+
+.promise-responsibility{
+    margin: 0 0 20px 40px;
+}
+
+.promise-responsibility::after{
+    background-image: url(./img/ico_responsible.png);
+}
+
+.promise-responsibility::before{
+    margin: -10px 0 0 -11px;
+}
+
+.leftside-thrid header{
+    padding: 25px 24px 0;
+    width: 249px;
+    height: 170px;
+}
+
+.txt-service{
+    font-size: 15px;
+    line-height: 26px;
+    border-radius: 15px;
+    padding: 8px 20px 8px 25px;
+    background-color: #fee102;
+    margin-bottom: 10px;
+    font-weight: bold;
+
+}
+
+.txt-service::before{
+    position: absolute;
+    display: block;
+    margin: -9px 0 0 -30px;
+    width: 18px;
+    height: 18px;
+    background: url("./img/talk_yellow.svg");
+    content: "";
+}
+
+.btn-service_move{
+    font-size: 16px;
+    line-height: 42px;
+    background-color: #eee;
+    color: #666;
+    border-radius: 15px;
+    padding: 10px 20px;
+}
+
+.article-normal{
+    box-sizing: border-box;
+    width: 297px;
+    height: 420px;
+    
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px #eee;
+    overflow: hidden;
+    transition: 0.2s;
+}
+
+.newsSection-sec article{
+    margin-bottom: 36px;
+}
+
+.newsSection-sec article:hover{
+    transform: translateY(-2px);
+    box-shadow: 1px 1px 10px gray;
+}
+
+.img-article{
+    margin-top: 2px;
+    width: 297px;
+    height: 223px;
+}
+
+.txt-tit{
+    font-size: 18px;
+    margin:0 0 35px 0;
+    width: 90%;
+}
+
+.txt-tag{
+    font-size: 13px;
+    color: gray;
+    padding-bottom: 10px;
+}
+
+.btn-share{
+    background: none;
+    border: none;
+    font-size: 16px;
+    position: absolute;
+    margin: -169px 0 0 -42px;
+    color: gray;
+}
+
