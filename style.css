@@ -1,3 +1,8 @@
+@font-face{
+    font-family: 'Noto Sans KR';
+    src:url(./font/NotoSansKR-Medium.otf);
+}
+
 .blind{
     position:absolute;
     clip: rect(0,0,0,0);
@@ -10,6 +15,7 @@
 body{
     word-break: keep-all;
     word-wrap: break-word;
+    font-family: 'Noto Sans KR';
 }
 
 .logo{
@@ -394,15 +400,20 @@ h4 button:hover{
     box-sizing: border-box;
     width: 297px;
     height: 192px;
-    
+    position: relative;
     border-radius: 10px;
     box-shadow: 1px 1px 10px #eee;
     overflow: hidden;
     transition: 0.2s;
 }
 
+.article-small .txt-tit{
+    font-size: 18px;
+    line-height: 28px;
+} 
+
 .txt-head{
-    padding: 10px 7px;
+    padding: 10px 10px;
     font-size: 13px;
 
     margin: 0 140px 20px 40px;
@@ -445,7 +456,7 @@ h4 button:hover{
 }
 
 .promise-responsibility::before{
-    margin: -10px 0 0 -11px;
+    margin: -10px 0 0 -13px;
 }
 
 .leftside-thrid header{
@@ -455,7 +466,7 @@ h4 button:hover{
 }
 
 .txt-service{
-    font-size: 15px;
+    font-size: 16px;
     line-height: 26px;
     border-radius: 15px;
     padding: 8px 20px 8px 25px;
@@ -485,6 +496,7 @@ h4 button:hover{
 }
 
 .article-normal{
+    position: relative;
     box-sizing: border-box;
     width: 297px;
     height: 420px;
@@ -505,29 +517,43 @@ h4 button:hover{
 }
 
 .img-article{
-    margin-top: 2px;
+    margin-top: 52px;
+    margin-left: -24px;
     width: 297px;
     height: 223px;
 }
 
 .txt-tit{
-    font-size: 18px;
-    margin:0 0 35px 0;
-    width: 90%;
+    font-size: 22px;
+    line-height: 32px;
+    height: 64px;
 }
 
 .txt-tag{
     font-size: 13px;
     color: gray;
-    padding-bottom: 10px;
+    position: absolute;
+    top:0;
+    margin-top: 165px;
+    margin-left: 25px;
 }
 
 .btn-share{
     background: none;
     border: none;
-    font-size: 16px;
     position: absolute;
-    margin: -169px 0 0 -42px;
+    top:0;
+    right: 0;
+    margin-top: 30px;
+    margin-right: 13px;
+    font-size: 0;
     color: gray;
 }
 
+.multi-ellipsis {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    padding-bottom: 3px;
+}
