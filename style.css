@@ -14,7 +14,7 @@
 
 body{
     word-break: keep-all;
-    word-wrap: break-word;
+    /* word-wrap: break-word; */
     font-family: 'Noto Sans KR';
 }
 
@@ -80,6 +80,11 @@ a{
     padding: 8px 8px;
 }
 
+.iconItem button:hover
+{
+    background-color: #eee;
+}
+
 i{
     font-size: 16px;
 }
@@ -87,13 +92,8 @@ i{
 main{
     margin: 78px 0 0 100px;
     height: 300vh;
-    
 }
 
-.iconItem button:hover
-{
-    background-color: #eee;
-}
 
 .day{
     width: 70px;
@@ -111,7 +111,7 @@ main{
     margin-bottom: 80px;
 }
 
-.newsEntertain{
+.article-big{
     
     box-sizing: border-box;
     width: 625px;
@@ -124,78 +124,9 @@ main{
     
 }
 
-.newsEntertain:hover{
+.article-normal:hover, .article-small:hover, .article-big:hover{
     transform: translateY(-2px);
     box-shadow: 1px 1px 10px gray;
-}
-
-.news{
-    width: 36px;
-    vertical-align: top;
-    margin-top: -3px;
-}
-
-.newsEntertainHeader{
-    padding: 25px 24px 0;
-    height: 165px;
-}
-
-.entertainTitle{
-    font-size: 30px;
-    margin-top: 11px;
-    margin-bottom: 20px;
-    width: 90%;
-}
-.newstag{
-    font-size: 13px;
-    color: gray;
-    padding-bottom: 10px;
-}
-
-.newsHead{
-    display: flex;
-    justify-content: space-between;
-    width: 580px;
-}
-
-.snsShare{
-    color: gray;
-}
-
-h4 button{
-    background:none;
-    border:none;
-    font-size: 16px;
-}
-
-h4 button:hover{
-    /* 버튼넣었다는걸 임시로 표시 */
-    background-color: gray;
-}
-
-.newsRelease{
-    position:relative;
-    padding: 10px 7px;
-    font-size: 13px;
-    margin-right: 430px;
-    border-radius: 13px;
-    background-color: #eeeeee;
-}
-
-.newsRelease::before{
-    position: absolute;
-    top: 0;
-    left: -4px;
-    width: 16px;
-    height: 13px;
-    background: url("./img/talk.svg");
-    content: "";
-}
-
-.rightSide{
-    display: flex;
-    margin-left: 18px;
-    width: 666px;
 }
 
 .leftSide{
@@ -203,86 +134,13 @@ h4 button:hover{
     height: 877px;
 }
 
-.global{
-    
-    box-sizing: border-box;
-    width: 297px;
-    height: 420px;
-    
-    border-radius: 10px;
-    box-shadow: 1px 1px 10px #eee;
-    overflow: hidden;
-    transition: 0.2s;
-}
-
-.sales{
-    
-    box-sizing: border-box;
-    width: 297px;
-    height: 420px;
-    
-    border-radius: 10px;
-    box-shadow: 1px 1px 10px #eee;
-    overflow: hidden;
-    transition: 0.2s;
-}
-
-.rightSide  header{
+main header{
     padding: 25px 24px 0;
     width: 249px;
     height: 170px;
 }
 
-.rightSide  header h4 .newsRelease{
-    margin-right: 100px;
-}
-
-.rightSide header h4{
-    display: flex;
-    justify-content: space-between;
-}
-
-.rightSide header .entertainTitle{
-    width: 245px;
-    font-size: 18px;
-    margin-bottom: 40px;
-}
-
-.rightSide .stock header .stockPrice{
-    font-size: 36px;
-    margin-top: 24px;
-    margin-bottom: 40px;
-    width: 90%;
-    font-weight: bold;
-    
-
-}
-
-.rightSide .stock header .stockPrice small{
-    position:absolute;
-    font-size: 14px;
-    line-height: 16px;
-    color:blue;
-    margin-left: 10px;
-    margin-top: 13px;
-}
-
-.rightSide .stock header .stockPrice small::before{
-    content: "▼ ";
-    
-}
-
-
-
-.picomaImage{
-    margin-top: 2px;
-    width: 297px;
-    height: 223px;
-}
-
-
-
-.kakaoInfo{
+.new-section-first{
     display: flex;
 }
 
@@ -290,6 +148,8 @@ h4 button:hover{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    margin-left: 18px;
+    width: 666px;
     height: 920px;
 }
 
@@ -297,41 +157,6 @@ h4 button:hover{
     margin-bottom: 36px;
 }
 
-.rightSide article:hover{
-    transform: translateY(-2px);
-    box-shadow: 1px 1px 10px gray;
-}
-
-.rightSide .stock{
-    
-    box-sizing: border-box;
-    width: 297px;
-    height: 192px;
-    
-    border-radius: 10px;
-    box-shadow: 1px 1px 10px #eee;
-    overflow: hidden;
-    transition: 0.2s;
-
-}
-
-.rightSide .promise{
-    
-    box-sizing: border-box;
-    width: 297px;
-    height: 192px;
-    
-    border-radius: 10px;
-    box-shadow: 1px 1px 10px #eee;
-    overflow: hidden;
-    transition: 0.2s;
-
-}
-
-
-.invertText{
-    margin-bottom: 60px;
-}
 
 .culture{
     width: 1300px;
@@ -356,32 +181,24 @@ h4 button:hover{
 }
 
 .cultureLink{
-    display: block;
-    font-size: 14px;
-    width: 136px;
+    display: inline-block;
     height: 33px;
-    margin: 36px auto;
-    
-    padding: 15px 40px 0 25px;
-    background-color: black;
-    color: white;
-
+    margin-top: 36px;
+    padding: 9px 12px 0 20px;
     border-radius: 42px;
-    position: relative;
-    
-    
+    font-size: 14px;
+    line-height: 20px;
+    color: white;
+    background-color: black;
+    vertical-align: top;
 }
 
-.cultureLink::after{
-    display: block;
-    content: '→';
-    position: absolute;
-    right: 18px;
-    margin-top: -18px;
-    font-size: 20px;
-    font-weight: bold;
+.icon-right{
+    display: inline-block;
+    font-size: 28px;
+    vertical-align: top;
+    margin-top: -3px;
 }
-
 
 .cultureText{
     font-size: 42px;
@@ -411,6 +228,14 @@ h4 button:hover{
     font-size: 18px;
     line-height: 28px;
 } 
+
+.article-big .txt-tit{
+    font-size: 32px;
+    line-height: 46px;
+    width: 625px;
+    height: 92px;
+    max-height: 92px;
+}
 
 .txt-head{
     padding: 10px 10px;
@@ -445,6 +270,10 @@ h4 button:hover{
 
 .news-release::after{
     background-image: url("./img/news_release.png");
+}
+
+.info::after{
+    background-image: url("./img/graph.png");
 }
 
 .promise-responsibility{
@@ -507,14 +336,10 @@ h4 button:hover{
     transition: 0.2s;
 }
 
-.newsSection-sec article{
+.news-section-second article{
     margin-bottom: 36px;
 }
 
-.newsSection-sec article:hover{
-    transform: translateY(-2px);
-    box-shadow: 1px 1px 10px gray;
-}
 
 .img-article{
     margin-top: 52px;
@@ -523,10 +348,44 @@ h4 button:hover{
     height: 223px;
 }
 
+.article-big .img-article{
+    width: inherit;
+    height: inherit;
+}
+.img-size-big{
+    width: 630px;
+    height: 742px;
+}
+
 .txt-tit{
     font-size: 22px;
     line-height: 32px;
     height: 64px;
+}
+
+.article-small .txt-stock{
+    font-size: 40px;
+    line-height: 59px;
+}
+
+.article-small .txt-stock small{
+    display: inline-block;
+    font-size: 14px;
+    line-height: 20px;
+    vertical-align: top;
+    margin-top: 20px;
+    margin-left: 25px;
+    color: blue;
+}
+
+.article-small .txt-stock small::before{
+    content: '▼';
+    display: inline-block;
+    position: absolute;
+    vertical-align: top;
+    margin-left: -17px;
+    font-size: 10px;
+
 }
 
 .txt-tag{
@@ -536,6 +395,15 @@ h4 button:hover{
     top:0;
     margin-top: 165px;
     margin-left: 25px;
+}
+
+.article-big .txt-tag{
+    margin-top: 190px;
+    font-size: 14px;
+}
+
+.date-time{
+    margin-left: 2px;
 }
 
 .btn-share{
