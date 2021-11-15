@@ -14,8 +14,10 @@
 
 body{
     word-break: keep-all;
-    /* word-wrap: break-word; */
+    
     font-family: 'Noto Sans KR';
+    width: 70%;
+    margin: 0 auto;
 }
 
 .logo{
@@ -28,42 +30,35 @@ header{
     height: 72px;
 }
 
-
-.navigationBar{
+ 
+.nav-bar{
     display: flex;
     text-align: center;
     align-items: center;
     justify-content: space-between;
     height: 72px;
-    margin: 0 100px;
+    
 }
 
-.menuWrap{
+.menu-wrap{
     display: flex;
     font-weight: bold;
 }
 
-.menuWrap:hover li a{
+.menu-wrap:hover li a{
     color:gray;
 }
 
-.menuWrap li:hover a{
+.menu-wrap li:hover a{
     color:black;
 }
 
-.iconMenu{
+.icon-menu{
     display: flex;
 }
 
-.menuItem{
+.menu-item{
     margin-right: 50px;
-}
-
-.iconItem{
-    
-    padding: 8px 8px;
-     
-    border-radius: 100px;
 }
 
 
@@ -72,15 +67,17 @@ a{
     color: black;
 }
 
-
-.iconItem button{
+.icon-item{
+    padding: 8px 8px;
+}
+.icon-item button{
     border:hidden;
     border-radius: 100px;
-    background-color: #ffffff11;
+    background: none;
     padding: 8px 8px;
 }
 
-.iconItem button:hover
+.icon-item button:hover
 {
     background-color: #eee;
 }
@@ -90,8 +87,8 @@ i{
 }
 
 main{
-    margin: 78px 0 0 100px;
-    height: 300vh;
+    margin-top: 78px;
+    height: 400vh;
 }
 
 
@@ -101,7 +98,7 @@ main{
     margin-top: -15px;
 
 }
-.mainTitle{
+.tit-main{
     font-size: 36px;
     font-weight: bold;
 }
@@ -163,7 +160,7 @@ main header{
     
 }
 
-.cultureBox{
+.article-box{
     
     text-align: center;
     border-radius: 14px;
@@ -174,13 +171,13 @@ main header{
     
 }
 
-.cultureImg{
+.img-culture{
     width: 900px;
     height: 240px;
    margin:50px 132px 0;
 }
 
-.cultureLink{
+.link-culture{
     display: inline-block;
     height: 33px;
     margin-top: 36px;
@@ -200,7 +197,7 @@ main header{
     margin-top: -3px;
 }
 
-.cultureText{
+.txt-culture{
     font-size: 42px;
 }
 
@@ -232,7 +229,7 @@ main header{
 .article-big .txt-tit{
     font-size: 32px;
     line-height: 46px;
-    width: 625px;
+    width: 600px;
     height: 92px;
     max-height: 92px;
 }
@@ -342,8 +339,8 @@ main header{
 
 
 .img-article{
-    margin-top: 52px;
-    margin-left: -24px;
+    
+    margin:52px 0 0 -24px;
     width: 297px;
     height: 223px;
 }
@@ -373,8 +370,8 @@ main header{
     font-size: 14px;
     line-height: 20px;
     vertical-align: top;
-    margin-top: 20px;
-    margin-left: 25px;
+
+    margin: 20px 0 0 25px;
     color: blue;
 }
 
@@ -393,8 +390,8 @@ main header{
     color: gray;
     position: absolute;
     top:0;
-    margin-top: 165px;
-    margin-left: 25px;
+    
+    margin: 165px 0 0 25px;
 }
 
 .article-big .txt-tag{
@@ -412,8 +409,7 @@ main header{
     position: absolute;
     top:0;
     right: 0;
-    margin-top: 30px;
-    margin-right: 13px;
+    margin: 30px 13px 0 0;
     font-size: 0;
     color: gray;
 }
@@ -424,4 +420,17 @@ main header{
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
     padding-bottom: 3px;
+}
+
+.leftside-thrid{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 666px;
+    height: 920px;
+}
+
+
+.news-section-second{
+    display: flex;
 }
