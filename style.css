@@ -14,7 +14,7 @@
 
 body{
     word-break: keep-all;
-    
+    word-break: break-all;
     font-family: 'Noto Sans KR';
     width: 70%;
     margin: 0 auto;
