@@ -3,6 +3,8 @@
     src:url(./font/NotoSansKR-Medium.otf);
 }
 
+
+
 .blind{
     position:absolute;
     clip: rect(0,0,0,0);
@@ -433,4 +435,11 @@ main header{
 
 .news-section-second{
     display: flex;
+}
+
+@media screen and (max-width:1536px) {
+    body{
+        width: 90%;
+    }
+    
 }
