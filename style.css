@@ -276,7 +276,7 @@ main header{
 }
 
 .promise-responsibility{
-    margin: 0 0 20px 40px;
+    margin: 0 125px 20px 40px;
 }
 
 .promise-responsibility::after{
@@ -443,4 +443,27 @@ main header{
         
     }
     
+}
+
+.grid-section{
+    display: flex;
+}
+.left-side-gird{
+
+}
+.right-side-gird{
+    display: grid;
+    grid-template-columns: repeat(2, 295px);
+    grid-template-rows: repeat(2, minmax(195px, auto));
+    gap:30px;
+}
+
+.normal{
+    grid-row: span 2;
+    border: 1px solid black;
+}
+
+.small{
+    grid-row: span 1;
+    border: 1px solid black;
 }
