@@ -7,6 +7,15 @@
     overflow: hidden;
 }
 
+@font-face{
+    font-family: 'Noto Sans KR';
+    src:url(./font/NotoSansKR-Medium.otf);
+}
+
+body{
+    font-family: 'Noto Sans KR';
+}
+
 #main{
     display: flex;
     justify-content: center;
@@ -37,8 +46,8 @@ figure{
 
 .main-grade_content{
     position: absolute;
-    left: 50%;
-    top:50px;
+    left:266px;
+    top:64px;
 }
 
 dl{
@@ -46,11 +55,170 @@ dl{
     font-size: 16px;
     line-height: 23px;
     color:#bdbdbd;
+    margin-bottom: 13px;
+}
+
+dl :nth-child(2){
+    margin-right: 10px;
+    position: relative;
+}
+
+dl :nth-child(4){
+    margin-left: 10px;
 }
 
 dl :nth-child(2)::after{
     content: '';
     display: block;
     position: absolute;
+    height: 14px;
+    border-left: 1px solid #bdbdbd;
+    right: 0;
+    top:0;
+    margin:5px -10px 0 0;
+}
+
+.txt-movie_name{
+    font-size: 32px;
+    line-height: 46px;
+    color: white;
+    font-weight: 700;
+    margin-bottom: 114px;
+}
+
+.btn-like, .btn-heart{
+    font-size: 0;
+}
+
+fieldset{
+    margin-bottom: 22px;
+}
+
+.txt-star_score{
+    font-size: 16px;
+    line-height: 23px;
+    font-weight: 500;
+    color: #f2f2f2;
+    margin-bottom: 16px;
+}
+
+input[type="checkbox"]{
+    display:none;
     
+}
+
+input[type="checkbox"] + label .thumb{
+    display:inline-block;
+    width:60px;
+    height:60px;
+    border: 2px solid #f2f2f2;
+    border-radius: 60px;
+    margin-right: 18px;
+    cursor: pointer;
+}
+input[type="checkbox"] + label .thumb::after{
+    position: absolute;
+    display: block;
+    content: '';
+    width: 29px;
+    height: 29px;
+    background-image: url(./img/thumbs-up.png);
+    background-size: cover;
+    margin:16px 16px;
+}
+
+input[type="checkbox"]:checked + label .thumb{
+    background-color: #2F80ED;
+}
+
+input[type="checkbox"]:checked + label .thumb::after{
+
+    background-image: url(./img/icon_thumbs_up_fill.png);
+    
+}
+
+
+
+input[type="checkbox"] + label .heart{
+    display:inline-block;
+    width:60px;
+    height:60px;
+    border: 2px solid #f2f2f2;
+    border-radius: 60px;
+    cursor: pointer;
+}
+input[type="checkbox"] + label .heart::after{
+    position: absolute;
+    display: block;
+    content: '';
+    width: 29px;
+    height: 29px;
+    background-image: url(./img/icon_heart.png);
+    background-size: cover;
+    margin:16px 16px;
+}
+
+input[type="checkbox"]:checked + label .heart{
+    background-color: #EB5757;
+}
+input[type="checkbox"]:checked + label .heart::after{
+    background-image: url(./img/icon_heart_fill.png);
+}
+
+input[type=range] { 
+    width:100%; 
+    -webkit-appearance: none; 
+    background: transparent; 
+}
+
+
+input[type="range"] { 
+    margin: auto;
+    -webkit-appearance: none;
+    position: absolute;
+    overflow: hidden;
+    height: 50px;
+    width: 275px;
+    cursor: pointer;
+    border-radius: 0; /* iOS */
+    background: #F2F2F2;
+    margin-left: -25px;
+}
+
+::-webkit-slider-runnable-track {
+    background: #F2F2F2;
+}
+
+/*
+ * 1. Set to 0 width and remove border for a slider without a thumb
+ */
+::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 20px; /* 1 */
+    height: 40px;
+    background: #F2C94C;
+    box-shadow: -100vw 0 0 100vw #F2C94C;
+    
+}
+
+.img-star{
+    position: absolute;
+    z-index: 1;
+    pointer-events: none;
+    margin-left: -25px;
+}
+
+.btn-close{
+    font-size: 0;
+    position: absolute;
+    right: 0;
+    
+    margin:12px -48px 0 0;
+    background: none;
+    border: none;
+    background-image: url(./img/x-circle.png);
+    background-size: cover;
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
 }

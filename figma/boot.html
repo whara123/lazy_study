@@ -19,29 +19,28 @@
             
             <article class="main-grade_content">
                 <header>
-                    <h2>파이썬 부트캠프</h2>
                     <dl>
                         <dt class="txt-hide">장르</dt>
                         <dd>드라마</dd>
-            
+                        
                         <dt class="txt-hide">관람가 등급</dt>
                         <dd>전체이용가</dd>
                     </dl>
+                    <h2 class="txt-movie_name">파이썬 부트캠프</h2>
                 </header>
                 <fieldset>
                     <legend class="txt-hide">버튼구역</legend>
                     <input type="checkbox" id="btn-like" name="btn-like">
-                    <label for="btn-like">좋아요 버튼</label>
+                    <label for="btn-like" class="btn-like"><span class="thumb"></span>좋아요 버튼</label>
                     <input type="checkbox" id="btn-heart" name="btn-heart">
-                    <label for="btn-heart">하트 버튼</label>
+                    <label for="btn-heart" class="btn-heart"><span class="heart"></span>하트 버튼</label>
         
                 </fieldset>
-                <p>별점 평균 4.5</p>
+                <p class="txt-star_score">별점 평균 4.5</p>
+                <img src="./img/test.png" alt="5별점" class="img-star">
+                
                 <input type="range">
-                <!-- 
-                <fieldset>
-                </fieldset> 
-                -->
+                <button type="button" class="btn-close">닫기버튼</button>
             </div>
     
         </article>
