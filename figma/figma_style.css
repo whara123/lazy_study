@@ -1,0 +1,56 @@
+.txt-hide{
+    position:absolute;
+    clip: rect(0,0,0,0);
+    width:1px;
+    height: 1px;
+    margin:-1px;
+    overflow: hidden;
+}
+
+#main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.main-grade_box{
+    width: 608px;
+    height: 500px;
+    background-color: #333;
+    border-radius: 10px;
+    display: flex;
+    position: relative;
+}
+
+figure{
+    font-size: 0;
+    background-image: url("./img/poster_bootcamp.png");
+    background-size: cover;
+    width: 281px;
+    height: 396px;
+    border-radius: 10px;
+    position: absolute;
+    left: -64px;
+    top: 50px;
+}
+
+.main-grade_content{
+    position: absolute;
+    left: 50%;
+    top:50px;
+}
+
+dl{
+    display: flex;
+    font-size: 16px;
+    line-height: 23px;
+    color:#bdbdbd;
+}
+
+dl :nth-child(2)::after{
+    content: '';
+    display: block;
+    position: absolute;
+    
+}
