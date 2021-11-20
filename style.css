@@ -16,10 +16,9 @@
 
 body{
     word-break: keep-all;
-    word-break: break-all;
+   
     font-family: 'Noto Sans KR';
-    width: 70%;
-    margin: 0 auto;
+    margin:0 300px; 
 }
 
 .logo{
@@ -28,7 +27,7 @@ body{
 }
 
 header{
-    width: 100%;
+    /* width: 100%; */
     height: 72px;
 }
 
@@ -432,38 +431,91 @@ main header{
     height: 920px;
 }
 
+.section-forth{
+    display: flex;
+}
 
 .news-section-second{
     display: flex;
 }
 
+
+.link-service, .link-recruit{
+    width: 630px;
+    height: 360px;
+    display: inline-block;
+    box-sizing: border-box;
+    padding:36px 36px 0;
+    position: relative;
+    background-color: #fae100;
+    border-radius: 12px;
+}
+.padding-warp{
+    position: relative;
+    left: -18px;
+    padding:0 18px;
+    box-sizing: border-box;
+}
+.link-recruit{
+    background-color:#3c64ff;
+}
+
+.link-service::before{
+    content: '';
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    right:36px;
+    bottom: 36px;
+    background-image: url(./img/밥먹자.png);
+    background-size: cover;
+    border-radius: 40px;
+    box-shadow: 0 0 10px gray;
+}
+
+.link-recruit::before{
+    content: '';
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    right:36px;
+    bottom: 36px;
+    background-image: url(./img/일하자.png);
+    background-size: cover;
+    border-radius: 40px;
+    
+}
+
+.section-forth a p:nth-child(1){
+    max-width: 430px;
+    font-size: 32px;
+    line-height: 44px;
+}
+
+.section-forth a p:nth-child(2){
+    margin-top: 24px;
+    background-color: #000;
+    height: 33px;
+    font-size: 14px;
+    line-height: 22px;
+    padding: 9px 20px 0;
+    display: inline-block;
+    border-radius: 42px;
+    color: #fff;
+}
+
+.link-see_all_news{
+    font-size: 18px;
+    line-height: 60px;
+    background-color: #eee;
+    border-radius: 60px;
+}
+
 @media screen and (max-width:1536px) {
     body{
-        width: 88%;
+        margin:0 100px; 
         
     }
     
 }
 
-.grid-section{
-    display: flex;
-}
-.left-side-gird{
-
-}
-.right-side-gird{
-    display: grid;
-    grid-template-columns: repeat(2, 295px);
-    grid-template-rows: repeat(2, minmax(195px, auto));
-    gap:30px;
-}
-
-.normal{
-    grid-row: span 2;
-    border: 1px solid black;
-}
-
-.small{
-    grid-row: span 1;
-    border: 1px solid black;
-}
