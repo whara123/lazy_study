@@ -431,13 +431,23 @@
     
     
     
-    function checkOpen(index){
+//     function checkOpen(index){
+//     var selectDetails = document.querySelectorAll("details");
+
+//      for(i=0; i<selectDetails.length;i++){
+//         if(i!=index){
+//                 selectDetails[i].removeAttribute("open");
+//             }
+//     }
+// }
+
+function checkOpen(index){
     var selectDetails = document.querySelectorAll("details");
 
-     for(i=0; i<selectDetails.length;i++){
-        if(i!=index){
-                selectDetails[i].removeAttribute("open");
-            }
+    for (i=0; i<selectDetails.length; i++) {
+      if (index != selectDetails[i]) {
+        selectDetails[i].removeAttribute("open");
+      }
     }
 }
 
