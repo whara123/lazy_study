@@ -759,9 +759,64 @@ footer section{
 
 
 
-@media screen and (max-width:1536px) {
-    body{
-        margin:0 100px; 
+@media screen and (max-width:1600px) {
+    .rightSide{
+        flex-wrap: nowrap;
+        height: 1600px;
+    }
+    
+    .rightSide article:nth-child(4){
+       
+        order: 4;
+    }
+
+    .rightSide article:nth-child(2){
+        
+        order: 2;
+    }
+    .rightSide article:nth-child(3){
+        
+        order: 1;
+    }
+
+    .rightSide article:nth-child(5){
+        
+        order: 5;
+    }
+
+    .leftSide{
+        height: 1550px;
+    }
+
+
+    .leftside-thrid{
+        flex-wrap: nowrap;
+        height: 1600px;
+    }
+
+    .rightside-thrid{
+        height: 1600px;
+    }
+
+    .section-forth{
+        flex-direction: column;
+    }
+    .padding-warp{
+        margin: 0 auto;
+    }
+    
+    .culture{
+        width: 650px;
+        margin: 0 auto;
+        
+    }
+    .img-culture{
+        width: 450px;
+        height: 120px;
+        margin: 0;
+    }
+    .article-box{
+        height: 325px;
     }
 }
 
