@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>게터디</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        
+        <h1 class="blind">클론페이지</h1>
+        
+        <nav class="nav-bar">
+            
+            <a href="#"><img class="logo" src="./img/kakao_logo.png" alt="게터디로고"></a>
+
+            <ul class="menu-wrap">
+                <li class="menu-item"><a href="#">게터디</a></li>
+                <li class="menu-item"><a href="#">뉴스</a></li>
+                <li class="menu-item"><a href="#">기술과 서비스</a></li>
+                <li class="menu-item"><a href="#">약속과 책임</a></li>
+            </ul>
+
+            <ul class="icon-menu">
+                <li class="icon-item"><button><i class="bi bi-search"></i></button></li>
+                <li class="icon-item"><button><i class="bi bi-globe"></i></button></li>
+                <li class="icon-item"><button id="btn-dark_mod"><i class="bi bi-moon"></i></button></li>
+                
+            </ul>
+        </nav>
+    </header>
+
+<main>
+    <h2 class="tit-main">
+        <img class="day" src="./img/ico_date7.png" alt="달력이미지"> 오늘의게터디
+    </h2>
+    <p class="day-desc">11월 16일 화요일 소식입니다</p>
+
+    <section class="new-section-first">
+        <h3 class="blind">게터디정보뉴스</h3>
+        <div class="leftSide">
+    
+    
+            <article class="article-big stiky">
+                <header>
+                    <h4>
+                        <p class="txt-head news-release">보도자료</p>
+                    </h4>
+
+                    <a href="#">
+                        <p class="txt-tit multi-ellipsis">footer태그 안에 section태그가 가능할까? 학생들 사이에서 논의로 떠올라</p>
+                        <img class="img-article" src="./img/footer.png" alt="footer정보 이미지">
+                    </a>
+                </header>
+                <p class="txt-tag">#Section 태그 #시멘틱</p>
+                <button type="button" class="btn-share"><i class="bi bi-three-dots-vertical icon-share"></i>sns공유버튼</button>
+                   
+            </article>
+        </div>
+    
+            <div class="rightSide">
+                <article class="article-normal">
+                        <header>
+                            <h4>
+                                <p class="txt-head news-release">
+                                    보도자료
+                                </p>
+                            </h4>
+                            <a href="#">
+                                
+                                <p class="txt-tit multi-ellipsis">그리드 신문물 전파 중, 반응형까지 고려한 패턴 등장에 술렁</p>
+                                <img class="img-article" src="./img/grid.png" alt="그리드전파 이미지">
+
+                            </a>
+                            
+                        </header>
+                        <p class="txt-tag">#그리드 #반응형</p>
+                        <button type="button" class="btn-share"><i class="bi bi-three-dots-vertical icon-share"></i>sns공유버튼</button>
+             </article>
+                </article>
+
+                <article class="article-normal">
+                    <header>
+                        <h4>
+                            <p class="txt-head news-release">
+                                보도자료
+                            </p>
+                        </h4>
+                        <a href="#">
+                            <p class="txt-tit multi-ellipsis">마크업 변화, 대대적인 클래스 명 개편작업 시작</p>
+                            <img class="img-article" src="./img/kebab.png" alt="케밥 이미지">
+
+                        </a>
+                        
+                    </header>
+                    <p class="txt-tag">#마크업 #케밥케이스</p>
+                    <button type="button" class="btn-share"><i class="bi bi-three-dots-vertical icon-share"></i>sns공유버튼</button>
+             </article>
+    
+                <article class="article-small">
+                    <a href="#">
+                        <header>
+
+                            <h4>
+                                    
+                                <p class="txt-head info">
+                                        지갑정보
+                                </p>
+                                    
+                            </h4>
+                                
+                            <p class="txt-tit txt-stock">125,000<small>3500</small></p>
+                            <p class="txt-tag date-time">2021.11.04 21:01PM</p>
+                                
+                                
+                        </header>
+                        </a>
+                        
+                </article>
+                    
+                <article class="article-normal">
+                        <header>
+                            <h4>
+                                <p class="txt-head info">
+                                    투자정보
+                                </p>
+                               
+                            </h4>
+                            <a href="#">
+                                <p class="txt-tit multi-ellipsis">코딩테스트 이대로 괜찮나?</p>
+                                <img class="img-article" src="./img/wrong.png" alt="틀렸습니다 이미지">
+
+                            </a>
+                        </header>
+                        <p class="txt-tag">#어쩌지 #살려줘</p>
+                        <button type="button" class="btn-share"><i class="bi bi-three-dots-vertical icon-share"></i>sns공유버튼</button>
+                    </article>
+    
+                
+    
+                <article class="article-small">
+                        <header>
+                            <h4>
+                                <p class="txt-head promise-responsibility">
+                                    약속과 책임
+                                </p>
+                            </h4>
+            
+                            <p class="txt-tit multi-ellipsis">게터디는 당신과 함께 더 나은 웹사이트를 만듭니다.</p>
+                            
+                        </header>    
+                        <p class="txt-tag">#고급정보 #질문 #게터디</p>
+                </article>
+            </div>
+    </section>
+
+
+    <section class="culture">
+        <h3 class="blind">문화</h3>
+            <article class="article-box">
+                <p class="txt-culture">기술과 사람으로 더 나은 웹사이트를 만듭니다.</p>
+                <a href="#" class="link-culture">벨로그 바로가기<i class="bi bi-arrow-right-short icon-right"></i></a>
+                
+                <img src="./img/bg_home_culture_210325.png" alt="문화소개이미지" class="img-culture">
+                
+            </article>
+    </section>
+
+    <section class="news-section-second">
+        <h3 class="blind">뉴스 섹션2</h3>
+
+        <div class="leftside-thrid">
+            
+            <article class="article-small client-service">
+                <header>
+                    <h4>
+                        <p class="txt-head">고객센터</p>
+                    </h4>
+
+                    <p class="txt-service">어떤 서비스를 도와드릴까요?</p>
+                    <a href="#" class="btn-service_move">그리드</a>
+                    <a href="#" class="btn-service_move">플렉스</a>
+                    <a href="#" class="btn-service_move">플롯</a> 
+                </header>
+            </article>
+
+            <article class="article-normal">
+                <header>
+                    <h4>
+                        <p class="txt-head news-release">보도자료</p>
+                    </h4>
+                    <a href="#">
+                        <p class="txt-tit multi-ellipsis">게으른 사람은 하나도 없는 게으른 스터디, 매일 활발한 공부 중</p>
+                        <img class="img-article" src="./img/code.png" alt="코드 이미지">
+                    </a>
+                </header>
+                <p class="txt-tag">#왤케 잘함? #발표</p>
+                <button type="button" class="btn-share"><i class="bi bi-three-dots-vertical icon-share"></i>sns공유버튼</button>
+            </article>
+
+            <article class="article-small">
+                <header>
+                    <h4>
+                        <p class="txt-head promise-responsibility">
+                            저작권 조심
+                        </p>
+                    </h4>
+    
+                    <p class="txt-tit multi-ellipsis">저작권법은 당신과 지갑을 위협할 수 있습니다.</p>
+                    
+                </header>    
+                <p class="txt-tag">#저작권 조심 #주의</p>
+        </article>
+
+            <article class="article-normal">
+                <header>
+                    <h4>
+                        <p class="txt-head news-release">보도자료</p>
+                    </h4>
+                    <a href="#">
+                        <p class="txt-tit multi-ellipsis">벌써 3주차 시작, 쏜살같이 지나기는 시간에 압박감 느껴져</p>
+                        <img class="img-article" src="./img/time.png" alt="달력 이미지">
+                    </a>
+                </header>
+                <p class="txt-tag">#2021 11월 3주차 #화이팅</p>
+                <button type="button" class="btn-share"><i class="bi bi-three-dots-vertical icon-share"></i>sns공유버튼</button>
+            </article>
+
+            <article class="article-normal">
+                <header>
+                    <h4>
+                        <p class="txt-head news-release">보도자료</p>
+                    </h4>
+                    <a href="#">
+                        <p class="txt-tit multi-ellipsis">열심히 해서 다들 돈 많이 벌고 맛있는 거 많이 먹고 재밌게 살아요</p>
+                        <img class="img-article" src="./img/money.png" alt="돈 이미지">
+                    </a>
+                </header>
+                <p class="txt-tag">#고급개발자</p>
+                <button type="button" class="btn-share"><i class="bi bi-three-dots-vertical icon-share"></i>sns공유버튼</button>
+            </article>
+        </div>
+
+        <div class="rightside-thrid">
+            <article class="article-big stiky">
+                <header>
+                    <h4>
+                        <p class="txt-head news-release">보도자료</p>
+                    </h4>
+
+                    <a href="#">
+                        <p class="txt-tit multi-ellipsis">section안에 section은 가능한거 맞아?<br> 가능하긴 가능한데 본 적은 없다고</p>
+                        <img class="img-article" src="./img/sect.png" alt="section정보 이미지">
+                    </a>
+                </header>
+                <p class="txt-tag">#section #div야 그립다</p>
+                <button type="button" class="btn-share"><i class="bi bi-three-dots-vertical icon-share"></i>sns공유버튼</button>
+                   
+            </article>
+        </div>
+    </section>
+
+    <section class="section-forth">
+        <div class="padding-warp">
+            <a href="#" class="link-service">
+                <p>사람과 기술로 일상을 돕는 게터디 서비스</p>
+                <p>서비스 바로가기<i class="bi bi-arrow-right-short icon-right"></i></p>
+            </a>
+
+        </div>
+
+        <div class="padding-warp">
+            <a href="#" class="link-recruit">
+                <p>한 부지런하다면, 당신은 이미 게터디 멤버</p>
+                <p>인재영입 바로가기<i class="bi bi-arrow-right-short icon-right"></i></p>
+            </a>
+        </div>
+    </section>
+    <a href="#" class="link-see_all_news">게터디 소식 모아보기</a>
+    <a href="#" class="icon-up"><i class="bi bi-arrow-up"></i>위로가기 버튼</a>
+</main>
+
+<footer>
+    <section class="footer-up_side">
+        <h4 class="blind">하단 링크 공간</h4>
+        <ul class="item-culture">
+            <li class="item-representative"><a href="">게터디</a></li>
+            <li><a href="">게터디 문화</a></li>
+            <li><a href="">공동체</a></li>
+            <li><a href="">히스토리</a></li>
+        </ul>
+        <ul>
+            <li class="item-representative"><a href="">뉴스</a></li>
+        </ul>
+
+        <ul>
+            <li class="item-representative"><a href="">기술과 서비스</a></li>
+            <li><a href="">기술</a></li>
+            <li><a href="">서비스</a></li>
+        </ul>
+
+        <ul>
+            <li class="item-representative"><a href="">약속과 책임</a></li>
+            <li><a href="">ESG</a></li>
+            <li><a href="">소셜임팩트</a></li>
+            <li><a href="">디지털 권리</a></li>
+            <li><a href="">AI 윤리</a></li>
+        </ul>
+
+        <ul>
+            <li class="item-representative"><a href="">투자정보</a></li>
+            <li><a href="">기업지배구조</a></li>
+            <li><a href="">주가정보</a></li>
+            <li><a href="">재무정보</a></li>
+            <li><a href="">IR행사</a></li>
+            <li><a href="">공시정보</a></li>
+            <li><a href="">공고</a></li>
+        </ul>
+
+        <ul class="item-client">
+            <li class="item-representative"><a href="">고객센터</a></li>
+            <li><a href="">게터디 고객센터<i class="bi bi-arrow-up-right"></i></a></li>
+            <li><a href="">도움 고객센터<i class="bi bi-arrow-up-right"></i></a></li>
+        </ul>
+
+        <ul class="link-talent_recruit">
+            <li class="item-representative"><a href="">인재영입<i class="bi bi-arrow-up-right"></i></a></li>
+        </ul>
+        
+        <ul class="link-account">
+            <li class="item-representative"><a href="">게터디계정<i class="bi bi-arrow-up-right"></i></a></li>
+        </ul>
+
+    </section>
+
+    <section class="footer-down_side">
+        <h4 class="blind">하단 약관관련 메뉴 및 카피라이트</h4>
+        <ul>
+            <li>
+                <details onclick="checkOpen(this)" class="details-terms">
+                    <summary>이용약관</summary>
+                    <ul>
+                        <li><a href="">게터디계정 서비스<i class="bi bi-arrow-up-right"></i></a></li>
+                        <li><a href="">게터디 서비스<i class="bi bi-arrow-up-right"></i></a></li>
+                        <li><a href="">도움 서비스<i class="bi bi-arrow-up-right"></i></a></li>
+                    </ul>
+                </details> 
+            
+            </li>
+            <li class="item-terms">
+                <details onclick="checkOpen(this)" class="details-terms">
+                    <summary>위치기반서비스이용약관</summary>
+                    <ul>
+                        <li><a href="">게터디 서비스<i class="bi bi-arrow-up-right"></i></a></li>
+                        <li><a href="">도움 서비스<i class="bi bi-arrow-up-right"></i></a></li>
+                    </ul>
+                </details>
+                
+            </li>
+            <li class="item-terms">
+                <details onclick="checkOpen(this)" class="details-terms">
+                    <summary>개인정보처리방침</summary>
+                    <ul>
+                        <li><a href="">기업사이트</a></li>
+                        <li><a href="">게터디 서비스<i class="bi bi-arrow-up-right"></i></a></li>
+                        <li><a href="">도움 서비스<i class="bi bi-arrow-up-right"></i></a></li>
+                    </ul>
+                </details>
+            </li>
+            <li><a href="">운영정책</a></li>
+            <li>
+                <details onclick="checkOpen(this)" class="details-terms">
+                    <summary>청소년보호정책</summary>
+                    <ul>
+                        <li><a href="">게터디 서비스<i class="bi bi-arrow-up-right"></i></a></li>
+                        <li><a href="">도움 서비스<i class="bi bi-arrow-up-right"></i></a></li>
+                    </ul> 
+
+                </details>
+            
+            </li>
+            <li><a href="">권리침해신고안내</a></li>
+            <li>
+                <details onclick="checkOpen(this)" class="details-terms">
+                    <summary>공지사항</summary>
+                    <ul>
+                        <li><a href="">기업사이트</a></li>
+                        <li><a href="">게터디 서비스<i class="bi bi-arrow-up-right"></i></a></li>
+                        <li><a href="">도움 서비스<i class="bi bi-arrow-up-right"></i></a></li>
+                    </ul>
+                </details>
+            
+            </li>
+            <li><a href="">사이버윤리실</a></li>
+            <li><a href="">Contact Us</a></li>
+        </ul>
+
+        <details  onclick="checkOpen(this)" class="details-relation">
+            <summary class="btn-relation_site">관련사이트</summary>
+            <ul class="list-relation_list">
+                <li><a href="">게터디 AI<i class="bi bi-arrow-up-right"></i></a></li>
+                <li><a href="">게터디 프라이버시<i class="bi bi-arrow-up-right"></i></a></li>
+                <li><a href="">게터디 디벨로퍼스<i class="bi bi-arrow-up-right"></i></a></li>
+                <li><a href="">도움 포털 사이트<i class="bi bi-arrow-up-right"></i></a></li>
+                <li><a href="">동반 성장 사이트<i class="bi bi-arrow-up-right"></i></a></li>
+                <li><a href="">제주 with getudy<i class="bi bi-arrow-up-right"></i></a></li>
+            </ul>
+        </details>
+        
+        <small>© getudy.All rights reserved.</small>
+    </section>
+    
+
+
+
+
+
+    <!-- <div>아이콘 제작자 <a href="https://www.flaticon.com/kr/authors/vectors-market" title="Vectors Market">Vectors Market</a> from <a href="https://www.flaticon.com/kr/" title="Flaticon">www.flaticon.com</a></div> -->
+    <!-- <div>아이콘 제작자 <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/kr/" title="Flaticon">www.flaticon.com</a></div> -->
+    <!-- <div>Icons made by <a href="https://www.flaticon.com/authors/wahyu-adam" title="Wahyu Adam">Wahyu Adam</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div> -->
+    <!-- <div>아이콘 제작자 <a href="https://www.flaticon.com/kr/authors/aziz-muttaqin" title="Aziz Muttaqin">Aziz Muttaqin</a> from <a href="https://www.flaticon.com/kr/" title="Flaticon">www.flaticon.com</a></div> -->
+</footer>
+
+<script>
+    
+    
+    
+//     function checkOpen(index){
+//     var selectDetails = document.querySelectorAll("details");
+
+//      for(i=0; i<selectDetails.length;i++){
+//         if(i!=index){
+//                 selectDetails[i].removeAttribute("open");
+//             }
+//     }
+// }
+
+function checkOpen(index){
+    var selectDetails = document.querySelectorAll("details");
+
+    for (i=0; i<selectDetails.length; i++) {
+      if (index != selectDetails[i]) {
+        selectDetails[i].removeAttribute("open");
+      }
+    }
+}
+
+</script>
+</body>
+
+</html>
