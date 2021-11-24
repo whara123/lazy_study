@@ -1,0 +1,68 @@
+
+/* 상단 네비 */
+nav{
+    margin:0 120px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav ul{
+    display: flex;
+    column-gap: 30px;
+    justify-content: flex-end;
+    font-size: 13px;
+
+}
+
+nav ul li{
+    padding: 13px 0 14px 0;
+    
+}
+nav ul li:nth-child(1){
+    margin-left: 50px;
+}
+
+nav ul li a:hover{
+    color: blue;
+}
+
+nav form{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13px;
+    border: 1px solid #807F83;
+    border-bottom: none;
+    border-top:none;
+}
+
+nav form input{
+    margin :12px 29px 12px 21px;
+}
+
+nav form label{
+    margin-right: 13px;
+    cursor: pointer;
+}
+
+nav form:hover{
+    color: blue;
+    background-color: #eee ;
+}
+
+nav form:hover input{
+    background-color: #eee ;
+}
+
+
+input[type="text"]{
+    border:none;
+    width: 220px;
+}
+
+.nav-second_row{
+    margin: 0;
+    width: 100%;
+    height: 100px;
+    border: 1px solid #807F83;
+}
