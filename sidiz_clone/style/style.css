@@ -1,0 +1,114 @@
+nav {
+  margin: 0 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-column-gap: 0;
+          column-gap: 0;
+  row-gap: 0;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-column-gap: 30px;
+          column-gap: 30px;
+  row-gap: 0;
+  font-size: 13px;
+}
+
+nav ul li {
+  padding: 13px 0 14px 0;
+}
+
+nav ul li:nth-child(1) {
+  margin-left: 50px;
+}
+
+nav ul li:nth-child(4),nav ul li:nth-child(5) {
+  font-size: 12px;
+}
+
+nav ul li a:hover {
+  color: blue;
+}
+
+nav form {
+  border: 1px solid #bcbcbc;
+  border-top: none;
+  border-bottom: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-column-gap: 0;
+          column-gap: 0;
+  row-gap: 0;
+  font-size: 13px;
+}
+
+nav form input {
+  margin: 12px 29px 12px 21px;
+}
+
+nav form label {
+  margin-right: 13px;
+  cursor: pointer;
+}
+
+nav form:hover {
+  color: blue;
+  background-color: #eee;
+}
+
+nav form:hover input {
+  background-color: #eee;
+}
+
+
+input[type="text"]{
+  border:none;
+  width: 220px;
+}
+
+.nav-second_row{
+  margin: 0;
+  width: 100%;
+  height: 60px;
+  border: 1px solid #bcbcbc;
+}
+
+.bi-bag-fill, .bi-files{
+  margin-right: 4px;
+}
+/*# sourceMappingURL=style.css.map */

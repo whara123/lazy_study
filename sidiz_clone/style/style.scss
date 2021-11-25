@@ -1,0 +1,61 @@
+$headLineColor:#bcbcbc;
+
+
+@mixin flexControl($justify:left, $align:left, $direction:row,$colgap:0, $rowgap:0) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction:$direction;
+    column-gap: $colgap;
+    row-gap: $rowgap;
+}
+
+@mixin borderLineDelete($deleteLine,$deleteLine2)
+{
+    border-#{$deleteLine}:none;
+    border-#{$deleteLine2}:none;
+}
+
+nav{
+    margin:0 120px;
+    @include flexControl(flex-end);
+    ul{
+        @include flexControl(flex-end,left,row,30px);
+        font-size: 13px;
+        li{
+            padding:13px 0 14px 0;
+            &:nth-child(1){
+                margin-left: 50px
+            }
+            a{
+                &:hover{
+                    color:blue;
+                }
+            }
+        }
+    }
+    form{
+        
+        border: 1px solid #bcbcbc;
+        @include borderLineDelete(top,bottom);
+        @include flexControl(space-between,center,row);
+        font-size: 13px;
+        input{
+            margin: 12px 29px 12px 21px;
+        }
+
+        label{
+            margin-right: 13px;
+            cursor: pointer;
+        }
+
+        &:hover{
+            color: blue;
+            background-color: #eee ;
+            input{
+                background-color: #eee ;
+            }
+        }
+    }
+}
+
