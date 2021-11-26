@@ -1,4 +1,8 @@
-nav {
+body {
+  font-family: 'Gothic A1', sans-serif;
+}
+
+.nav-first_row {
   margin: 0 120px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -18,7 +22,7 @@ nav {
   row-gap: 0;
 }
 
-nav ul {
+.nav-first_row ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -38,23 +42,23 @@ nav ul {
   font-size: 13px;
 }
 
-nav ul li {
+.nav-first_row ul li {
   padding: 13px 0 14px 0;
 }
 
-nav ul li:nth-child(1) {
+.nav-first_row ul li:nth-child(1) {
   margin-left: 50px;
 }
 
-nav ul li:nth-child(4),nav ul li:nth-child(5) {
-  font-size: 12px;
-}
-
-nav ul li a:hover {
+.nav-first_row ul li a:hover {
   color: blue;
 }
 
-nav form {
+.nav-first_row ul li .bi-files, .nav-first_row ul li .bi-bag-fill {
+  margin-right: 4px;
+}
+
+.nav-first_row form {
   border: 1px solid #bcbcbc;
   border-top: none;
   border-bottom: none;
@@ -77,38 +81,38 @@ nav form {
   font-size: 13px;
 }
 
-nav form input {
+.nav-first_row form input {
   margin: 12px 29px 12px 21px;
 }
 
-nav form label {
+.nav-first_row form button {
   margin-right: 13px;
   cursor: pointer;
+  border: none;
+  background: none;
+  font-family: 'Gothic A1', sans-serif;
+  font-stretch: condensed;
 }
 
-nav form:hover {
+.nav-first_row form:hover {
   color: blue;
   background-color: #eee;
 }
 
-nav form:hover input {
+.nav-first_row form:hover input {
   background-color: #eee;
 }
 
+.nav-first_row form:hover button {
+  color: blue;
+}
 
-input[type="text"]{
-  border:none;
+input[type="text"] {
+  border: none;
   width: 220px;
 }
 
-.nav-second_row{
-  margin: 0;
-  width: 100%;
-  height: 60px;
+.nav-second_row {
   border: 1px solid #bcbcbc;
-}
-
-.bi-bag-fill, .bi-files{
-  margin-right: 4px;
 }
 /*# sourceMappingURL=style.css.map */

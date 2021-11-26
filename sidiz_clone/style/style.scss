@@ -1,5 +1,8 @@
 $headLineColor:#bcbcbc;
 
+body{
+    font-family: 'Gothic A1', sans-serif;
+}
 
 @mixin flexControl($justify:left, $align:left, $direction:row,$colgap:0, $rowgap:0) {
     display: flex;
@@ -16,7 +19,7 @@ $headLineColor:#bcbcbc;
     border-#{$deleteLine2}:none;
 }
 
-nav{
+.nav-first_row{
     margin:0 120px;
     @include flexControl(flex-end);
     ul{
@@ -32,8 +35,12 @@ nav{
                     color:blue;
                 }
             }
+            .bi-files, .bi-bag-fill{
+                margin-right: 4px;
+            }
         }
     }
+
     form{
         
         border: 1px solid #bcbcbc;
@@ -44,9 +51,13 @@ nav{
             margin: 12px 29px 12px 21px;
         }
 
-        label{
+        button{
             margin-right: 13px;
             cursor: pointer;
+            border: none;
+            background: none;
+            font-family: 'Gothic A1', sans-serif;
+            font-stretch: condensed;
         }
 
         &:hover{
@@ -55,7 +66,21 @@ nav{
             input{
                 background-color: #eee ;
             }
+            button{
+                color: blue;
+            }
         }
     }
+}
+
+input[type="text"]{
+    border:none;
+    width: 220px;
+}
+
+.nav-second_row{
+    
+    
+    border: 1px solid #bcbcbc;
 }
 
