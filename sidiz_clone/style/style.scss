@@ -101,6 +101,9 @@ input[type="text"]{
                 &:nth-child(1), &:nth-child(2){
                     margin-right: 60px;
                 }
+                &:hover{
+                    color:blue;
+                }
 
                 .link-drop_item, .link-drop_item_thrid,.link-drop_item_second{
                     display: none;
