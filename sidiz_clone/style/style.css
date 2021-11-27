@@ -214,8 +214,8 @@ input[type="text"] {
 
 .nav-second_row .nav-wrap .link-menu .menu-item .link-drop_item_second {
   width: 700px;
-  -webkit-transform: translateX(-450px);
-          transform: translateX(-450px);
+  -webkit-transform: translateX(-360px);
+          transform: translateX(-360px);
 }
 
 .nav-second_row .nav-wrap .link-menu .menu-item .link-drop_item_second li ul {
