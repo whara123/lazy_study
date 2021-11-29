@@ -168,6 +168,7 @@ input[type="text"] {
   position: relative;
   padding-bottom: 20px;
   margin-top: 20px;
+  z-index: 1;
 }
 
 .nav-second_row .nav-wrap .link-menu .menu-item:nth-child(1), .nav-second_row .nav-wrap .link-menu .menu-item:nth-child(2) {
@@ -294,7 +295,6 @@ input[type="text"] {
   top: 0;
   width: 70%;
   height: 900px;
-  z-index: -1;
 }
 
 .section-silde .article-cont-wrap ul li:nth-child(1) figure {
