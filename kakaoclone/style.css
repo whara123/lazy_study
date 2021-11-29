@@ -1,6 +1,6 @@
 @font-face{
     font-family: 'Noto Sans KR';
-    src:url(./font/NotoSansKR-Medium.otf);
+    src:url(../font/NotoSansKR-Medium.otf);
 }
 
 
@@ -250,7 +250,7 @@ main header{
     margin:-9px 0 0 -11px;
     width: 16px;
     height: 13px;
-    background: url("./img/talk.svg");
+    background: url("../img/talk.svg");
     content: "";
 }
 
@@ -258,7 +258,7 @@ main header{
     position: absolute;
     display: block;
     content: '';
-    background-image: url("./img/ico_customer.png");
+    background-image: url("../img/ico_customer.png");
     background-size: cover;
     margin: -25px 0 0 -49px;
     width: 36px;
@@ -266,11 +266,11 @@ main header{
 }
 
 .news-release::after{
-    background-image: url("./img/news_release.png");
+    background-image: url("../img/news_release.png");
 }
 
 .info::after{
-    background-image: url("./img/graph.png");
+    background-image: url("../img/graph.png");
 }
 
 .promise-responsibility{
@@ -278,7 +278,7 @@ main header{
 }
 
 .promise-responsibility::after{
-    background-image: url(./img/ico_responsible.png);
+    background-image: url(../img/ico_responsible.png);
 }
 
 .promise-responsibility::before{
@@ -308,7 +308,7 @@ main header{
     margin: -9px 0 0 -30px;
     width: 18px;
     height: 18px;
-    background: url("./img/talk_yellow.svg");
+    background: url("../img/talk_yellow.svg");
     content: "";
 }
 
@@ -466,7 +466,7 @@ main header{
     height: 180px;
     right:36px;
     bottom: 36px;
-    background-image: url(./img/밥먹자.png);
+    background-image: url(../img/밥먹자.png);
     background-size: cover;
     border-radius: 40px;
     box-shadow: 0 0 10px gray;
@@ -479,7 +479,7 @@ main header{
     height: 180px;
     right:36px;
     bottom: 36px;
-    background-image: url(./img/일하자.png);
+    background-image: url(../img/일하자.png);
     background-size: cover;
     border-radius: 40px;
     
@@ -687,7 +687,7 @@ footer section{
     position: absolute;
     width: 10px;
     height: 10px;
-    background-image: url(./img/chevron-down.svg);
+    background-image: url(../img/chevron-down.svg);
     background-size: cover;
     
     margin: 2px 0 0 4px;
@@ -698,14 +698,14 @@ footer section{
     position: absolute;
     width: 14px;
     height: 14px;
-    background-image: url(./img/plus-lg.svg);
+    background-image: url(../img/plus-lg.svg);
     background-size: cover;
 
     margin: 3px 0 0 100px;
 }
 
 .details-terms[open] > summary::after, .details-terms > summary:hover::after{
-    background-image:url(./img/chevron-up.svg);
+    background-image:url(../img/chevron-up.svg);
 }
 
 .details-relation[open] > summary::after{
