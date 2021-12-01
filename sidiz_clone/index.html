@@ -179,14 +179,14 @@
             <h2 class="txt-hide">제품 소개 슬라이드 섹션</h2>
             <article class="article-cont-wrap">
                 <ul>
-                    <li>
+                    <li class="silde-item">
                         <p>의자 위 인생은 진행중</p>
                         <strong>SIBIZ</strong>
                         
                         <figure>
                             <a href="">
                                 <img src="./img/chair-g8ca3b4623_640.jpg" alt="" class="img-small_chair">
-                                <em class="txt-small_content">브랜드 캠패인 영상<br> 바로가기</em>
+                                <figcaption class="txt-small_content">브랜드 캠패인 영상<br> 바로가기</figcaption>
                             </a>
                         </figure>
                             
@@ -199,7 +199,26 @@
                             <img src="./img/office-g397c2bf34_1920.jpg" alt="" class="img-sibiz_silde">
                         </a>
                     </li>
-                    <li></li>
+                    <li class="silde-item">
+                        <p>바퀴는 빼고 집중력은 더하다.</p>
+                        <strong>ibel</strong>
+                        
+                        <figure>
+                            <a href="">
+                                <img src="./img/chair-g8ca3b4623_640.jpg" alt="" class="img-small_chair">
+                                <figcaption class="txt-small_content">집중력의자 아이벨<br>자세히 알아보기</figcaption>
+                            </a>
+                        </figure>
+                            
+                        <div class="wrap-prev_next_btn">
+
+                            <button type="button"><i class="bi bi-chevron-left"></i>PREV</button>
+                            <button type="button">NEXT<i class="bi bi-chevron-right"></i></button>
+                        </div>
+                        <a href="">
+                            <img src="./img/chairs-gddfb38424_1920.jpg" alt="" class="img-sibiz_silde">
+                        </a>
+                    </li>
                     <li></li>
                     <li></li>
                     <li></li>
@@ -240,5 +259,21 @@
             </section>
         </footer>
     </main>
+
+    <script>
+        
+        let count = 0;
+        let fade = document.querySelectorAll('.silde-item');
+        
+        setInterval(function (){ 
+            fade[count].style.$isTrigger='true';
+            
+
+        },5000);
+
+        let a;
+        console.log(a);
+
+    </script>
 </body>
 </html>

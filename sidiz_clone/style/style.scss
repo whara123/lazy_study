@@ -1,4 +1,16 @@
 $headLineColor:#bcbcbc;
+$isTrigger:true;
+@keyframes nextSilde{
+    0%{
+
+    }
+
+    100%{
+        opacity: 0;
+        $isTrigger:false;
+    }
+}
+
 
 body{
     font-family: 'Gothic A1', sans-serif;
@@ -151,7 +163,7 @@ input[type="text"]{
                                 font-weight: bold;
                                 width: 150px;  
                                 position: relative;
-
+                                
                                 &::before{
                                     content: '';
                                     position: absolute;
@@ -202,7 +214,16 @@ input[type="text"]{
             position: absolute;
             width: 100%;
             height: 100%;
-            li:nth-child(1){
+            .silde-item{
+                display: block;
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                animation:none;
+                opacity: 1;
+                @if($isTrigger){
+                    animation: nextSilde 1s;
+                }
                 p{
                     margin-top: 90px;
                     width: 393px;
@@ -254,7 +275,7 @@ input[type="text"]{
 
                             }
                         .txt-small_content{
-                            
+                            display: inline-block;
                             font-size: 14px;
                             font-weight: bold;
                             position: absolute;
@@ -293,6 +314,14 @@ input[type="text"]{
                         }
                     }
                 }
+
+                &:nth-child(2){
+                    display: none;
+                    opacity: 0;
+                    $isTrigger:false;
+                    animation:none;
+                }
+
             }
         }
 
