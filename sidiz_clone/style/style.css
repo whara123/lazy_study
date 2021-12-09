@@ -300,9 +300,9 @@ input[type="text"] {
   height: 100%;
   -webkit-animation: none;
           animation: none;
-  opacity: 1;
-  -webkit-animation: nextSilde 1s;
-          animation: nextSilde 1s;
+  opacity: 0;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 .section-silde .article-cont-wrap ul .silde-item p {
@@ -406,6 +406,10 @@ input[type="text"] {
   opacity: 0;
   -webkit-animation: none;
           animation: none;
+}
+
+.section-silde .article-cont-wrap ul .silde-item.slide-on {
+  opacity: 1;
 }
 
 .section-task_chair .wrap-inner_content {
