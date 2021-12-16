@@ -1,16 +1,4 @@
 $headLineColor:#bcbcbc;
-$isTrigger:true;
-@keyframes nextSilde{
-    0%{
-
-    }
-
-    100%{
-        opacity: 0;
-        $isTrigger:false;
-    }
-}
-
 
 body{
     font-family: 'Gothic A1', sans-serif;
@@ -224,7 +212,7 @@ input[type="text"]{
                 width: 100%;
                 height: 100%;
                 animation:none;
-                opacity: 0;
+                
                 transition: 1s;
                 
                 p{
@@ -320,9 +308,6 @@ input[type="text"]{
 
                 &:nth-child(2){
                     display: none;
-                    opacity: 0;
-                    $isTrigger:false;
-                    animation:none;
                 }
 
             }
@@ -335,11 +320,11 @@ input[type="text"]{
     }
 }
 
-.section-task_chair{
+.section-task_chair, .section-kids_chair{
     
     .wrap-inner_content{
-        margin:0 320px;
-        
+        padding:0 320px 120px 320px;
+        border-bottom: 1px solid #000;
         .wrap-head_text{
             
             display: flex;
@@ -364,7 +349,7 @@ input[type="text"]{
             flex-direction: column;
             row-gap: 80px;
             column-gap: 100px;
-            height: 1600px;
+            max-height: 1600px;
             figure{
                 display: flex;
                 flex-direction: column;
@@ -375,7 +360,6 @@ input[type="text"]{
                     &:hover{
                         &::before{
                             content: '';
-                            
                             position: absolute;
                             width: 100%;
                             height: 100%;
@@ -383,10 +367,19 @@ input[type="text"]{
                         }
                     }
                 }
+                .link-kid{
+                    width: 340px;
+                    height: 500px;
+                }
+
                 img{
                     width: 100%;
                     max-height: 800px;
                 }
+                .img-kids{
+                    width: 100%;
+                }
+
                 strong{
                     font-size: 50px;
                     font-weight: bold;
@@ -394,9 +387,23 @@ input[type="text"]{
                 }
                 em{
                     font-size: 24px;
+                    line-height: 40px;
                 }
             }
         }
+        .wrap-cont_img.kids{
+            flex-direction:row;
+            gap: 120px;
+            margin-bottom: 240px;
+            em{
+                font-size: 20px;
+            }
+        }
     }
+
+}
+
+.section-kids_chair{
+    padding-top: 121px;
 
 }
