@@ -179,7 +179,7 @@
             <h2 class="txt-hide">제품 소개 슬라이드 섹션</h2>
             <article class="article-cont-wrap">
                 <ul>
-                    <li class="silde-item">
+                    <li class="silde-item slide-on">
                         <p>의자 위 인생은 진행중</p>
                         <strong>SIBIZ</strong>
                         
@@ -191,7 +191,6 @@
                         </figure>
                             
                         <div class="wrap-prev_next_btn">
-
                             <button type="button"><i class="bi bi-chevron-left"></i>PREV</button>
                             <button type="button">NEXT<i class="bi bi-chevron-right"></i></button>
                         </div>
@@ -219,10 +218,71 @@
                             <img src="./img/chairs-gddfb38424_1920.jpg" alt="" class="img-sibiz_silde">
                         </a>
                     </li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
+                    <li class="silde-item">
+                        <p>앉음마부터 좋은 자세로.</p>
+                        <strong>molti</strong>
+                        
+                        <figure>
+                            <a href="">
+                                <img src="./img/chair-g8ca3b4623_640.jpg" alt="" class="img-small_chair">
+                                <figcaption class="txt-small_content">하이체어편 조립 및<br>사용법 가이드</figcaption>
+                            </a>
+                        </figure>
+                            
+                        <div class="wrap-prev_next_btn">
+
+                            <button type="button"><i class="bi bi-chevron-left"></i>PREV</button>
+                            <button type="button">NEXT<i class="bi bi-chevron-right"></i></button>
+                        </div>
+                        <a href="">
+                            <img src="./img/girl-gc5bb8d01b_1920.jpg" alt="" class="img-sibiz_silde">
+                        </a>
+                    </li>
+                    <li class="silde-item">
+                        <p>슬기로운 집콕 생활템.</p>
+                        <strong>T40</strong>
+                        
+                        <figure>
+                            <a href="">
+                                <img src="./img/chair-g8ca3b4623_640.jpg" alt="" class="img-small_chair">
+                                <figcaption class="txt-small_content">농구화와 의자편:T40<br>영상 바로보기</figcaption>
+                            </a>
+                        </figure>
+                            
+                        <div class="wrap-prev_next_btn">
+
+                            <button type="button"><i class="bi bi-chevron-left"></i>PREV</button>
+                            <button type="button">NEXT<i class="bi bi-chevron-right"></i></button>
+                        </div>
+                        <a href="">
+                            <img src="./img/meeting-room-ga58ba3b74_1920.jpg" alt="" class="img-sibiz_silde">
+                        </a>
+                    </li>
+                    <li class="silde-item">
+                        <p>Fittiong your movement.</p>
+                        <strong>T80</strong>
+                        
+                        <figure>
+                            <a href="">
+                                <img src="./img/chair-g8ca3b4623_640.jpg" alt="" class="img-small_chair">
+                                <figcaption class="txt-small_content">의자가 인생을 바꾼다<br>ULTIMATE CHAIR, T80</figcaption>
+                            </a>
+                        </figure>
+                            
+                        <div class="wrap-prev_next_btn">
+
+                            <button type="button"><i class="bi bi-chevron-left"></i>PREV</button>
+                            <button type="button">NEXT<i class="bi bi-chevron-right"></i></button>
+                        </div>
+                        <a href="">
+                            <img src="./img/meeting-room-gecd3d9107_1920.jpg" alt="" class="img-sibiz_silde">
+                        </a>
+                    </li>
                 </ul>
+                <div class="wrap-prev_next_btn fixed">
+                    <button type="button" class="prevBtn"><i class="bi bi-chevron-left"></i>PREV</button>
+                    <button type="button" class="nextBtn">NEXT<i class="bi bi-chevron-right"></i></button>
+                </div>
             </article>
             
         </section>
@@ -329,7 +389,44 @@
     </main>
 
     <script>
-        
+        let sildeItem = document.querySelectorAll('.silde-item');
+        let nextBtn = document.querySelector('.nextBtn');
+        let prevBtn = document.querySelector('.prevBtn');
+        let currentIndex = 0;
+
+        nextBtn.addEventListener('click',function(){
+            sildeItem[currentIndex].classList.remove('slide-on');
+            if(currentIndex!==sildeItem.length-1){
+                currentIndex++;
+            }else{
+                currentIndex=0;
+            }
+            sildeItem[currentIndex].classList.add('slide-on');
+        });
+
+        prevBtn.addEventListener('click',function(){
+            sildeItem[currentIndex].classList.remove('slide-on');
+            if(currentIndex==0){
+                currentIndex=sildeItem.length-1;
+            }else{
+                currentIndex--;
+            }
+            sildeItem[currentIndex].classList.add('slide-on');
+        })
+
+
+        setInterval(function(){
+            sildeItem[currentIndex].classList.remove('slide-on');
+            if(currentIndex!==sildeItem.length-1){
+                currentIndex++;
+            }else{
+                currentIndex=0;
+            }
+            sildeItem[currentIndex].classList.add('slide-on');
+            
+        },2000);
+
+
         
 
     </script>

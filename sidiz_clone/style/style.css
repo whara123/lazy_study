@@ -286,6 +286,7 @@ input[type="text"] {
           animation: none;
   -webkit-transition: 1s;
   transition: 1s;
+  opacity: 0;
 }
 
 .section-silde .article-cont-wrap ul .silde-item p {
@@ -384,12 +385,34 @@ input[type="text"] {
   margin-left: 20px;
 }
 
-.section-silde .article-cont-wrap ul .silde-item:nth-child(2) {
-  display: none;
-}
-
 .section-silde .article-cont-wrap ul .silde-item.slide-on {
   opacity: 1;
+}
+
+.wrap-prev_next_btn.fixed {
+  position: absolute;
+  top: 737px;
+}
+
+.wrap-prev_next_btn.fixed button {
+  padding: 0;
+  margin-right: 18px;
+  font-size: 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.wrap-prev_next_btn.fixed button:hover {
+  color: blue;
+}
+
+.wrap-prev_next_btn.fixed button .bi-chevron-left {
+  margin-right: 20px;
+}
+
+.wrap-prev_next_btn.fixed button .bi-chevron-right {
+  margin-left: 20px;
 }
 
 .section-task_chair .wrap-inner_content, .section-kids_chair .wrap-inner_content {
