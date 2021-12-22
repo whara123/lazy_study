@@ -351,7 +351,7 @@ input[type="text"]{
 .section-task_chair, .section-kids_chair{
     
     .wrap-inner_content{
-        padding:0 320px 120px 320px;
+        padding:0 320px 0 320px;
         border-bottom: 1px solid #000;
         .wrap-head_text{
             
@@ -378,6 +378,7 @@ input[type="text"]{
             row-gap: 80px;
             column-gap: 100px;
             max-height: 1600px;
+            margin-bottom: 150px;
             figure{
                 display: flex;
                 flex-direction: column;
@@ -422,7 +423,8 @@ input[type="text"]{
         .wrap-cont_img.kids{
             flex-direction:row;
             gap: 120px;
-            margin-bottom: 240px;
+            margin-bottom: 150px;
+            
             em{
                 font-size: 20px;
             }
