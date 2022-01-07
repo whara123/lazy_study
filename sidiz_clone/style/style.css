@@ -691,4 +691,65 @@ input[type="text"] {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+
+footer {
+  background-color: #141414;
+  padding: 60px 315px;
+  color: #fff;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+footer .img-logo {
+  font-size: 0;
+  width: 30px;
+  height: 44px;
+  background-image: url(../img/logo_sb.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+footer .footer-enter-place {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer .wrap-link-sns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+}
+
+footer .bi-facebook, footer .bi-instagram, footer .bi-chat-right-dots {
+  font-size: 25px;
+  color: #fff;
+}
+
+footer .list-company-info {
+  margin-top: 40px;
+}
+
+footer .list-company-info li {
+  margin-bottom: 20px;
+}
+
+footer .list-company-info li:nth-child(4), footer .list-company-info li:nth-child(5) {
+  font-size: 13px;
+}
+
+footer .txt-company-name {
+  font-size: 15px;
+  line-height: 22px;
+  font-weight: bold;
+}
+
+footer .link-check {
+  font-size: 13px;
+  color: #fff;
+}
 /*# sourceMappingURL=style.css.map */

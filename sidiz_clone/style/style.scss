@@ -578,3 +578,57 @@ input[type="text"]{
     justify-content: space-between;
     
 }
+
+footer{
+    background-color: #141414;
+    padding: 60px 315px;
+    color: #fff;
+    font-size: 14px;
+    line-height: 18px;
+    .img-logo{
+        font-size: 0;
+        width: 30px;
+        height: 44px;
+        background-image: url(../img/logo_sb.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .footer-enter-place{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .wrap-link-sns{
+        display: flex;
+        gap: 20px;
+    }
+
+    .bi-facebook, .bi-instagram, .bi-chat-right-dots{
+        font-size: 25px;
+        color: #fff;
+    }
+
+    .list-company-info{
+        margin-top: 40px;
+        li{
+            margin-bottom: 20px;
+        }
+        li:nth-child(4),li:nth-child(5){
+            font-size: 13px;
+        }
+    }
+   
+    .txt-company-name{
+        font-size: 15px;
+        line-height: 22px;
+        font-weight: bold;
+        
+    }
+
+    .link-check{
+        font-size: 13px;
+        color:#fff;
+    }
+}
+
