@@ -581,7 +581,7 @@ input[type="text"]{
 
 footer{
     background-color: #141414;
-    padding: 60px 315px;
+    padding: 60px 315px 100px;
     color: #fff;
     font-size: 14px;
     line-height: 18px;
@@ -611,14 +611,40 @@ footer{
 
     .list-company-info{
         margin-top: 40px;
+        
         li{
             margin-bottom: 20px;
+            p{
+                position: relative;
+                em{
+                    margin-left: 10px;
+                }
+                em::before{
+                    content: '';
+                    position: absolute;
+                    width: 2px;
+                    height: 2px;
+                    border-radius: 1px;
+                    background-color: #fff;
+                    transform: translate(-7px, 7px);
+                }
+                .add-email::before{
+                    content: '';
+                    position: absolute;
+                    width: 2px;
+                    height: 12px;
+                    border-radius: 1px;
+                    background-color: #fff;
+                    transform: translate(-7px, 2px);
+                }
+
+            }
         }
         li:nth-child(4),li:nth-child(5){
             font-size: 13px;
         }
     }
-   
+
     .txt-company-name{
         font-size: 15px;
         line-height: 22px;
@@ -626,9 +652,94 @@ footer{
         
     }
 
-    .link-check{
+    a{
         font-size: 13px;
         color:#fff;
     }
 }
 
+.footer-company{
+    display: flex;
+    
+}
+.wrap-company-product{
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    .wrap-company-policy{
+        a{
+            margin-right: 70px;
+        }
+        .link-policy{
+            text-decoration: underline;
+        }
+        .personal{
+            color:blue;
+        }
+    }
+}
+.footer-company-info{
+    width: 351px;
+    margin-right: 66px;
+}
+
+.list-company-product-info{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    column-gap: 67px;
+    
+}
+
+.list-company-cont{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    height: 138px;
+    }
+    .list-name{
+        font-size: 15px;
+        font-weight: bold;
+    }
+    ul{
+        li{
+            margin-bottom: 10px;
+        }
+    }
+
+.link-chat-bot{
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.phone-num{
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 50px;
+}
+
+.time-lunch{
+    font-size: 12px;
+    color:#999;
+}
+.list-time-lunch{
+    margin-bottom: 25px;
+}
+
+.wrap-help-menu{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+}
+
+.link-help{
+    padding:8px 16px;
+    font-size: 13px;
+    line-height: 19px;
+    border-radius: 20px;
+    box-shadow: 1px 5px 6px rgba(0,0,0,0.1);
+    background-color: #fff;
+}
